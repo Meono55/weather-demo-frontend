@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="input-group mb-3 w-50 p-3">
+        <input type="text" class="form-control" placeholder="Enter ZipCode" aria-label="Recipient's username" aria-describedby="basic-addon2" id="zipCode" name="zipCode" #zipCode>
+        <div class="input-group-append">
+          <button (click)="onSubmit(zipCode.value)" class="btn btn-outline-secondary" type="button">Get Forecast</button>
+        </div>
+    </div>
+    <div>
+        <app-weather-data [weatherData]="weatherData"></app-weather-data>
+    </div>
+</div>
